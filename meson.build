@@ -20,5 +20,11 @@ dep_libxml2 = dependency('libxml-2.0')
 libdir = get_option('prefix') / get_option('libdir')
 gbmbackendspath = libdir / 'gbm'
 
+install_headers(
+    'src/gbm_msm.h',
+    'external/gbm_backend_abi.h',
+    subdir : 'gbm-msm',
+)
+
 c_args = ['-DGBM_BACKENDS_PATH="' + gbmbackendspath + '"']
 subdir('src')
