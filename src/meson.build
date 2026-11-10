@@ -32,7 +32,7 @@ msm_gbm = shared_module('msm_gbm',
     ],
     include_directories : ext_includes,
     install : true,
-    install_dir: libdir / 'gbm',
+    install_dir: gbmbackendspath,
     name_prefix: '',
     c_args: c_args,
 )
