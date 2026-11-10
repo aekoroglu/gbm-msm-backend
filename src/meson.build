@@ -42,3 +42,8 @@ install_symlink(
     install_dir: gbmbackendspath,
     pointing_to: 'msm_gbm.so',
 )
+
+install_data(
+    'default_fmt_alignment.xml',
+    install_dir: gbmbackendspath,
+)
